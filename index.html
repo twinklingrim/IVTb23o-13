@@ -3,79 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <title>я обожаю пайтон</title>
-<style>
-    body {
-    background-color: #000000;
-    font-family: cursive;
-}
-    h1 {
-    background-color: #00b33c;
-}
-    .flex-container {
-        font-family: system-ui;;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        padding: 20px;
-        border: 2px solid #00b33c;
-        margin: 20px;
-        border-radius: 10px;
-        background-color:darkgreen;
-}
-    .flex-item {
-        background-color: #ffffff;
-        color: #000000;
-        padding: 15px;
-        border-radius: 5px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        width: 30%;
-}
-</style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <hr color="#00b33c">
-    <h1 style="color: rgb(255, 255, 255);" align = "center">Python - один из лучших языков!</h1>
+    <h1 align="center" id="main-title">Python - один из лучших языков!</h1>
 
-    <div style="text-align: center;">
-        <img src="python.gif" alt="Python" style="width: 200px; height: auto; border: 2px solid #ffffff; border-radius: 20px;">
-    </div>
-
-
+    <div class="gifs-grid-container">
+        <div class="image-container">
+            <img src="python.gif" class="image">
+            <img src="comeherepython.gif" class="image">
+        </div>
+    </div>    
+       
+        
     <div class="flex-container">
-        <div class="flex-item" style="font-size: 16px; line-height: 1.5;">
-        <p><strong><u>Python</u></strong> — это высокоуровневый язык программирования, который был создан Гвидо ван Россумом и впервые выпущен в 1991 году.</p>
-        <p>Python известен своей простотой и читаемостью, что делает его идеальным для начинающих программистов. 
-        Он поддерживает несколько парадигм программирования, включая объектно-ориентированное, императивное и функциональное программирование.</p>
-        </div>
-    
-
-        <div class="flex-item" style="font-size: 16px; line-height: 1.5;">
-        <p><u>Основные особенности Python:</u></p>
-        <ul>
-            <li>Простота и лаконичность синтаксиса.</li>
-            <li>Большая стандартная библиотека.</li>
-            <li>Поддержка различных платформ (Windows, macOS, Linux).</li>
-            <li>Широкое сообщество и множество сторонних библиотек.</li>
-            <li>Используется в веб-разработке, анализе данных, машинном обучении и многих других областях.</li>
-        </ul>
+        <div class="flex-item">
+            <p><strong><u>Python</u></strong> — это высокоуровневый язык программирования, который был создан Гвидо ван Россумом и впервые выпущен в 1991 году.</p>
+            <p>Python известен своей простотой и читаемостью, что делает его идеальным для начинающих программистов. 
+            Он поддерживает несколько парадигм программирования, включая объектно-ориентированное, императивное и функциональное программирование.</p>
         </div>
 
-        <div class="flex-item" style="font-size: 16px; line-height: 1.5;">
-        <p><u>Плюсы выбора языка:</u></p>
-        <ol>
-            <li>Низкий порог входа</li>
-            <li>Читаемость и простота синтаксиса</li>
-            <li>Большая стандартная библиотека и множество сторонних модулей</li>
-            <li>Широкое применение в различных областях (веб-разработка, анализ данных, машинное обучение и др.)</li>
-        </ol>
+        <div class="flex-item">
+            <p><u>Основные особенности Python:</u></p>
+            <ul>
+                <li>Простота и лаконичность синтаксиса.</li>
+                <li>Большая стандартная библиотека.</li>
+                <li>Поддержка различных платформ (Windows, macOS, Linux).</li>
+                <li>Широкое сообщество и множество сторонних библиотек.</li>
+                <li>Используется в веб-разработке, анализе данных, машинном обучении и многих других областях.</li>
+            </ul>
+        </div>
+
+        <div class="flex-item">
+            <p><u>Плюсы выбора языка:</u></p>
+            <ol>
+                <li>Низкий порог входа</li>
+                <li>Читаемость и простота синтаксиса</li>
+                <li>Большая стандартная библиотека и множество сторонних модулей</li>
+                <li>Широкое применение в различных областях (веб-разработка, анализ данных, машинное обучение и др.)</li>
+            </ol>
         </div>
     </div>
 
-    <div style="color: #ffffff; font-size: 16px; line-height: 1.5;">
-    <p>Python активно используется в таких фреймворках, как Django и Flask для веб-разработки, а также в библиотеках, таких как NumPy и Pandas для анализа данных.</p>
-    <p>Для начала работы с Python достаточно установить интерпретатор с официального сайта <a href="https://www.python.org" target="_blank"><font color="#00b33c"; >тыкни по ссылке:)</font></a>.</p>
+    <div class="text-container">
+        <p>Python активно используется в таких фреймворках, как Django и Flask для веб-разработки, а также в библиотеках, таких как NumPy и Pandas для анализа данных.</p>
+        <p>Для начала работы с Python достаточно установить интерпретатор с официального сайта <a href="https://www.python.org" target="_blank">тыкни по ссылке:)</a>.</p>
     </div>
 
+    <div class="grid-container">
+        <div class="grid-item"><a href="https://djangodoc.ru/3.2/?ysclid=ma2odoxxwv497049986" target="_blank">Документация для Django</a></div>
+        <div class="grid-item"><a href="https://flask-russian-docs.readthedocs.io/ru/latest/" target="_blank">Документация для Flask</a></div>
+        <div class="grid-item"><a href="https://pythonru.com/biblioteki/rukovodstvo-po-ispolzovaniju-python-biblioteki-numpy?ysclid=ma2olz7frc904873155" target="_blank">Документация для NumPy</a></div>
+        <div class="grid-item"><a href="https://pythonist.ru/pandas-tutorial/?ysclid=ma2ongqely142745962" target="_blank">Учебник для Pandas</a></div>
+    </div>
     <hr color="#00b33c">
 </body> 
 </html>
