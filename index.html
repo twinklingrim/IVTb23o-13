@@ -59,6 +59,46 @@
         <div class="grid-item"><a href="https://pythonist.ru/pandas-tutorial/?ysclid=ma2ongqely142745962" target="_blank">Учебник для Pandas</a></div>
     </div>
     <hr color="#00b33c">
+    <!-- Контейнер для формы -->
+    <div class="main-form-container">
+        <div class="form-wrapper">
+            <h2 align="center">Регистрация поклонника Python</h2>
+            <form id="python-form">
+                <div class="form-group">
+                    <label for="username">Имя пользователя:</label>
+                    <input type="text" id="username" name="username" placeholder="Введите ваше имя">
+                    <div class="error-message" id="username-error"></div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Электронная почта:</label>
+                    <input type="email" id="email" name="email" placeholder="Введите ваш email">
+                    <div class="error-message" id="email-error"></div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Пароль:</label>
+                    <input type="password" id="password" name="password" placeholder="Придумайте пароль">
+                    <div class="error-message" id="password-error"></div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="python-level">Уровень знаний Python:</label>
+                    <select id="python-level" name="python-level">
+                        <option value="">Выберите ваш уровень</option>
+                        <option value="beginner">Начинающий</option>
+                        <option value="intermediate">Средний</option>
+                        <option value="advanced">Продвинутый</option>
+                    </select>
+                    <div class="error-message" id="level-error"></div>
+                </div>
+                
+                <button type="submit" class="submit-btn">Присоединиться!</button>
+            </form>
+        </div>
+    </div>
+    
+    <script src="from-validations.js"></script>
     <script src="carousel.js"></script>
     <script>
     // Список изображений для карусели

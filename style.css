@@ -4,7 +4,7 @@ body {
 }
 
 h1 {
-    background-color: #00b33c;
+    background-color: #00ff55;
     color: #ffffff;
     text-align: center;
     animation: pulse 2s infinite; 
@@ -187,4 +187,124 @@ h1 {
 
 .carousel-button:hover {
     background-color: rgba(0, 179, 60, 1);
+}
+
+/* Стили для контейнера формы */
+.main-form-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #000000;
+}
+
+.form-wrapper {
+    width: 100%;
+    max-width: 600px;
+    padding: 25px;
+    border: 2px solid #00b33c;
+    border-radius: 35px;
+    background-color: darkgreen;
+    box-shadow: 0 4px 15px rgba(0, 179, 60, 0.3);
+    animation: pulse 2s infinite;
+}
+
+.form-wrapper h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px #000;
+}
+
+.form-group {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: white;
+    font-weight: bold;
+    width: 75%; 
+}
+
+.form-group input,
+.form-group select {
+    width: 75%;
+    padding: 12px;
+    border: 2px solid #00b33c;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: #f0f0f0;
+    transition: all 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #00ff55;
+    box-shadow: 0 0 8px rgba(0, 255, 85, 0.6);
+}
+
+.error-message {
+    color: #ff6b6b;
+    font-size: 14px;
+    margin-top: 5px;
+    height: 18px;
+    font-weight: bold;
+    width: 75%; 
+    text-align: left; 
+}
+
+.submit-btn {
+    background-color: #00b33c;
+    color: white;
+    border: none;
+    padding: 14px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    width: 75%; 
+    transition: all 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 10px auto 0; 
+    display: block; 
+}
+
+.submit-btn:hover {
+    background-color: #00e64d;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 230, 77, 0.4);
+}
+
+/* Стиль для невалидных полей */
+input.invalid, select.invalid {
+    border-color: #ff3860;
+    background-color: #fff0f0;
+}
+
+@media (max-width: 768px) {
+    .form-wrapper {
+        padding: 20px;
+    }
+    
+    .form-group input,
+    .form-group select {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-wrapper {
+        padding: 15px;
+        border-radius: 25px;
+    }
+    
+    .form-wrapper h2 {
+        font-size: 20px;
+    }
 }
