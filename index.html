@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <title>я обожаю пайтон</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="carousel.css">
 </head>
 <body>
     <hr color="#00b33c">
     <h1 align="center" id="main-title">Python - один из лучших языков!</h1>
-
     <div class="gifs-grid-container">
         <div class="image-container">
             <img src="python.gif" class="image">
             <img src="comeherepython.gif" class="image">
         </div>
+        <div class="carousel-container"></div>
     </div>    
        
         
@@ -58,5 +59,19 @@
         <div class="grid-item"><a href="https://pythonist.ru/pandas-tutorial/?ysclid=ma2ongqely142745962" target="_blank">Учебник для Pandas</a></div>
     </div>
     <hr color="#00b33c">
+    <script src="carousel.js"></script>
+    <script>
+    // Список изображений для карусели
+    const images = [
+        'img1.png',
+        'img2.png',
+        'img3.png'
+    ];
+    
+    // Создаем карусель после загрузки страницы
+    document.addEventListener('DOMContentLoaded', () => {
+        createCarousel(images, '.carousel-container', 3000);
+    });
+    </script>
 </body> 
 </html>
